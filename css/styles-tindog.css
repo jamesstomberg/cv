@@ -7,8 +7,8 @@ body {
   color: #fff;
 }
 
-.container-fluid {
-  padding: 3% 15%;
+.title-container {
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -55,6 +55,11 @@ p {
   font-size: 1.2rem;
   font-family: 'Montserrat';
   font-weight: 300;
+  color: rgba(255,255,255,.75) !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
 }
 
 /* Download Buttons */
@@ -66,13 +71,17 @@ p {
 /* Title Image */
 
 .title-image {
-  width: 60%;
+  width: 20%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 23%;
 }
 
 /* Features Section */
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .feature-box {
@@ -115,4 +124,63 @@ p {
 .press-logo {
   width: 15%;
   padding: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+/* Footer Section */
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.footer-icons {
+  padding: 3% 1%;
+  color: black;
+}
+
+/* Media Queries */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    width: 60%;
+    transform: rotate(0);
+  }
+
+  .nav-link-custom {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .nav-link-custom:hover {
+    color: rgba(240,240,240,.75) !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 }
